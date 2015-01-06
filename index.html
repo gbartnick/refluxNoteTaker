@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Note Taker</title>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+        <style>
+            tr.view .edit{
+                display:none;
+            }
+            tr.editing .edit{
+                display: block;
+            }
+            tr.editing .view{
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <H1>Note Taker</H1>
+
+        <div id="notesApp" style="margin:5px;"></div>
+        <script src="node_modules/react/dist/react-with-addons.js"></script>
+        <script src="node_modules/react/dist/JSXTransformer.js"></script>
+        <script src="node_modules/reflux/dist/reflux.js"></script>
+        <script src="node_modules/react-router/dist/react-router.js"></script>
+        <script type="application/javascript" src="dist/bundle.js"></script>
+        <script type="text/jsx" src="js/components.jsx.js"></script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "name":"refluxToDo",
+    "devDependencies":{
+        "webpack":"~1.4.15",
+        "express": "4.10.6"
+    },
+
+    "dependencies": {
+        "reflux": "~0.2.1",
+        "react": "~0.12.2",
+        "react-router": "~0.11.6",
+        "bootstrap":"~3.3.1"
+    },
+    "scripts":{
+        "build":"webpack --watch",
+        "start": "npm run build & node server"
+    }
+}
