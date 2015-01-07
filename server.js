@@ -4,10 +4,12 @@ var fs = require("fs"),
 
 
 var express = require('express');
+var serveIndex = require('serve-index');
 var app = express();
 
 app.use('/', express.static(__dirname + '/'));
 app.use('/libs', express.static(__dirname + '/node_modules'));
+app.use('/libs', serveIndex('node_modules', {'icons': true}));
 
 app.get('/api/note/list', function(req, res){
     var file = fs.readFileSync(DataFilePath, 'utf8');
