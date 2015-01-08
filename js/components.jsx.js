@@ -173,7 +173,7 @@
                 if (opt.selected === true) {
                     // if the <select> is a multiple, push the values
                     // to an array
-                    defaultValue = opt.value;
+                    defaultValue = opt.key;
                 }
 
                 // attribute schema matches <option> spec; http://www.w3.org/TR/REC-html40/interact/forms.html#h-17.6
